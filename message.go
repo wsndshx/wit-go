@@ -28,7 +28,7 @@ type MessageEntity struct {
 	Start      int                    `json:"start"`
 	End        int                    `json:"end"`
 	Body       string                 `json:"body"`
-	Value      string                 `json:"value"`
+	Value      interface{}            `json:"value"`
 	Confidence float64                `json:"confidence"`
 	Entities   []MessageEntity        `json:"entities"`
 	Extra      map[string]interface{} `json:"-"`
